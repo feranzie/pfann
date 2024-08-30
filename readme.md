@@ -30,8 +30,10 @@ Relative paths are supported but not recommended.
 ## generate segments for query
 Usage of `segments.py`:
 ```
-python segments.py <query list> <database location> <output result file>
+python segments.py --input_dir <directory where input audio is > --output_dir <output directory> --audio_file < name of the audio file>
 ```
+example: python segments.py --input_dir /home/paperspace/recordings --output_dir data  --audio_file recording.wav
+
 
 
 ## Recognize music
