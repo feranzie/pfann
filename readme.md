@@ -28,7 +28,7 @@ This program supports both MP3 and WAV audio format.
 Relative paths are supported but not recommended.
 
 ## generate segments for query
-Usage of `segmets.py`:
+Usage of `segments.py`:
 ```
 python segments.py <query list> <database location> <output result file>
 ```
