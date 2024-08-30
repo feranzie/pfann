@@ -2,7 +2,7 @@
 
 ## generate list of songs
 ```
-python gen_music.py --directory <directory containing songs> --output <output file>
+python gen_list.py --directory <directory containing songs> --output <output file>
 ```
 Output to write the list of music files
 
@@ -68,25 +68,3 @@ It has 5 columns: query, answer, score, time, and part_scores.
 * score: Matching score, used in my thesis
 * time: The time when the query clip starts in the matched music, in seconds
 * part_scores: Mainly used for debugging, currently empty
-
-BIN file contains matching scores of every database music for each query.
-It is used in my ensemble experiments.
-The file format is a flattened 2D array of following structure, without header:
-```c++
-struct match_t {
-  float score; // Matching score
-  float offset; // The time when the query clip starts in the matched music, in seconds
-};
-```
-The matching score of j-th database music in i-th query is at index `i * database size + j`.
-
-## Evaluation
-```
-python tools/accuracy.py /path/to/query6s/expected.csv /path/to/result_detail.csv
-```
-
-## Ensemble experiment
-```bash
-python ensemble/svmheatmap2.py out/lm_ out/shift_4_ out/svm lin_acc.csv
-```
-More info TODO
