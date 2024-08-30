@@ -4,7 +4,9 @@
 ```
 python gen_list.py --directory <directory containing songs> --output <output file>
 ```
-Output to write the list of music files
+example: python gen_list.py --directory /songs/ --output songs.txt
+
+Output file is a txt file
 
 ## Build a fingerprint database
 
