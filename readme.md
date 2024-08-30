@@ -6,7 +6,7 @@ python gen_list.py --directory <directory containing songs> --output <output fil
 ```
 example: python gen_list.py --directory /songs/ --output songs.txt
 
-Output file is a txt file
+Output file is a txt containing lists of all songs to build the db on
 
 ## Build a fingerprint database
 
@@ -34,6 +34,7 @@ Usage of `segments.py`:
 ```
 python segments.py --input_dir <directory where input audio is > --output_dir <output directory> --audio_file < name of the audio file>
 ```
+
 example: python segments.py --input_dir /home/paperspace/recordings --output_dir data  --audio_file recording.wav
 
 ## generate list of segments
