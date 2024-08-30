@@ -34,7 +34,11 @@ python segments.py --input_dir <directory where input audio is > --output_dir <o
 ```
 example: python segments.py --input_dir /home/paperspace/recordings --output_dir data  --audio_file recording.wav
 
-
+## generate list of segments
+```
+python gen_list.py --directory <directory containing segments> --output <output file>
+```
+Output to write the list of music files
 
 ## Recognize music
 Usage of `matcher.py`:
