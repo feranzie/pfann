@@ -74,4 +74,4 @@ It has 5 columns: query, answer, score, time, and part_scores.
 * part_scores: Mainly used for debugging, currently empty
 
 
-the <output result file>_detail.csv is what gets displayed
+the <output_result_file>_detail.csv is what gets displayed
