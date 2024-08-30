@@ -72,3 +72,6 @@ It has 5 columns: query, answer, score, time, and part_scores.
 * score: Matching score, used in my thesis
 * time: The time when the query clip starts in the matched music, in seconds
 * part_scores: Mainly used for debugging, currently empty
+
+
+the <output result file>_detail.csv is what gets displayed
