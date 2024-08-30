@@ -14,7 +14,7 @@ Usage of `builder.py`:
 ```
 python builder.py <music list file> <output database location> <model config>
 ```
-Music list file is a file containing list of music file paths.
+Music list file is a file containing lists of all songs to build the db on
 File must be UTF-8 without BOM. For example:
 ```
 /path/to/fma_medium/000/000002.mp3
@@ -39,17 +39,18 @@ example: python segments.py --input_dir /home/paperspace/recordings --output_dir
 
 ## generate list of segments
 ```
-python gen_list.py --directory <directory containing segments> --output <output file>
+python gen_list.py --directory <directory containing segments> --output <output file >
 ```
-Output to write the list of music files
+example: python gen_list.py --directory /segments/ --output segment.txt
 
+Output file is a txt containing list of all segments
 ## Recognize music
 Usage of `matcher.py`:
 ```
 python matcher.py <query list> <database location> <output result file>
 ```
 
-Query list is a file containing list of query file paths. For example:
+Query list is a file containing list of all segments. For example:
 ```
 /path/to/queries/out2_snr2/000002.wav
 /path/to/queries/out2_snr2/000005.wav
