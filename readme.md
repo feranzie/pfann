@@ -84,6 +84,6 @@ python filter.py --input <input csv> --output <output csv>
 ```
 filter script removes match scores lower that set threshold.
 
-the <input csv> should be the <output_result_file>_detail.csv from the matcher script.
+the <input_csv> should be the <output_result_file>_detail.csv from the matcher script.
 
-the <output csv> is what gets displayed.
+the <output_csv> is what gets displayed.
