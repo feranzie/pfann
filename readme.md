@@ -77,5 +77,10 @@ It has 5 columns: query, answer, score, time, and part_scores.
 * time: The time when the query clip starts in the matched music, in seconds
 * part_scores: Mainly used for debugging, currently empty
 
-
-the <output_result_file>_detail.csv is what gets displayed
+# Recognize music
+Usage of `filter.py`:
+```
+python filter.py --input <input csv> --output <output csv>```
+filter script removes match scores lower that set threshold
+the <input csv> should be the <output_result_file>_detail.csv from the matcher script
+the <output csv> is what gets displayed 
