@@ -80,7 +80,8 @@ It has 5 columns: query, answer, score, time, and part_scores.
 # Recognize music
 Usage of `filter.py`:
 ```
-python filter.py --input <input csv> --output <output csv>```
+python filter.py --input <input csv> --output <output csv>
+```
 filter script removes match scores lower that set threshold
 the <input csv> should be the <output_result_file>_detail.csv from the matcher script
 the <output csv> is what gets displayed 
