@@ -35,7 +35,7 @@ Usage of `segments.py`:
 python segments.py --input_dir <directory where input audio is > --output_dir <output directory> --audio_file < name of the audio file>
 ```
 
-example: python segments.py --input_dir /home/paperspace/recordings --output_dir data  --audio_file recording.wav
+example: python segment.py --input_dir /home/paperspace/recordings --output_dir data  --audio_file recording.wav
 
 ## generate list of segments
 ```
