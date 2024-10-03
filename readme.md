@@ -29,13 +29,21 @@ If omitted, the model config is `configs/default.json` by default.
 This program supports both MP3 and WAV audio format.
 Relative paths are supported but not recommended.
 
+## generate splits from music segmentation model
+Usage of `split_classification.py`:
+```
+python split_classification.py --input <directory to segmentation model csv  > --output_dir <output directory> --audio < path to the audio file>
+```
+
+example: python split_classification.py --input_dir /home/paperspace/segments --output_dir data  --audio recording.mp3
+
 ## generate segments for query
 Usage of `segments.py`:
 ```
-python segments.py --input_dir <directory where input audio is > --output_dir <output directory> --audio_file < name of the audio file>
+python segments.py --input_dir <directory where all segment audios are > --output_dir <output directory> 
 ```
 
-example: python segment.py --input_dir /home/paperspace/recordings --output_dir data  --audio_file recording.wav
+example: python segment.py --input_dir /home/paperspace/recordings --output_dir data  
 
 ## generate list of segments
 ```
