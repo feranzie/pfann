@@ -38,7 +38,7 @@ python split_classification.py --input <directory to segmentation model csv  > -
 example: python split_classification.py --input_dir /home/paperspace/segments --output_dir data  --audio recording.mp3
 
 ## generate segments for query
-Usage of `segments.py`:
+Usage of `segment.py`:
 ```
 python segments.py --input_dir <directory where all segment audios are > --output_dir <output directory> 
 ```
