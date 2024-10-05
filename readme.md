@@ -40,7 +40,7 @@ example: python split_classification.py --input_dir /home/paperspace/segments --
 ## generate segments for query
 Usage of `segment.py`:
 ```
-python segments.py --input_dir <directory where all segment audios are > --output_dir <output directory> 
+python segment.py --input_dir <directory where all segment audios are > --output_dir <output directory> 
 ```
 
 example: python segment.py --input_dir /home/paperspace/recordings --output_dir data  
